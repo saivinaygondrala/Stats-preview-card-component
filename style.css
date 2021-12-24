@@ -1,0 +1,89 @@
+body{
+    background-color: #0A0C1B;
+    color: white;
+}
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding: 3rem;
+}
+.outer .container{
+    background-color: #1C1839;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 50vw;
+    min-height: 65vh;
+}
+.outer .container .first{
+    padding: 3rem;
+    width: 50%;
+    line-height: 2.5rem;
+}
+.outer .container .first h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.outer .container .first p{
+    font-size: large;
+    color: #a0a0a7;
+}
+.outer .container .second{
+    background: linear-gradient(to right,#45087d,#43086acc),url('./images/image-header-desktop.jpg') no-repeat top center;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50%;
+}
+.outer .container .first .detailing{
+    display: flex;
+    justify-content: space-between;
+}
+.outer .container .first .detailing .no p{
+color: #737384;
+font-size: 13px;
+}
+@media screen and (max-width:892px) {
+    .outer{
+        padding: 0;
+        margin: 1rem;
+    }
+    .outer .container{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+
+        align-items: center;
+    }
+    .outer .container .second{
+        height: 50vh;
+        width: 100%;
+        background: linear-gradient(to right,#45087d,#43086acc),url('./images/image-header-mobile.jpg') no-repeat top center;
+        background-size: cover;
+        border-radius: 5px;
+    }
+    .outer .container .first{
+        width: 100%;
+    }
+    .outer .container .first .detailing{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    .outer .container .first .detailing h3{
+        font-size: 1.5rem;
+    }
+    .outer .container .first .detailing h3 .no{
+        padding-bottom: 1rem;
+    }
+}
